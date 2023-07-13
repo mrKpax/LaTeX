@@ -1,0 +1,65 @@
+\documentclass{article} %aprire tipo di documento
+\title{Titolo}
+\author{Autore}
+\date{April 2023}
+
+\begin{document} %apre il documento
+  %commento
+  \section{Titolo sezione}
+    \subsection{Titolo sezione interne}
+      \subsubsection{Titolo sezione internissima}
+  \paragraph{Paragrafo} %non va a capo
+  \noindent %per andare a capo senza indentare
+
+  \textit{testo italico}
+  \textbf{testo grassetto}
+  \underline{testo sottolineato}
+  \emph{testo enfatizzato}
+
+  \begin{itemize} %inizia una lista puntata
+  \begin{enumerate} %inizia una lista numerata
+    %lista con numeri romani
+    \usepackage{enumerate} %importa librerie
+      \begin{enumerate}[I]
+      \begin{enumerate}[i]
+    %possibile creare sottoliste inserendo una lista al posto dell'item
+  \end{itemize/enumerate}
+
+  \begin{table}[h!]
+    \centering %per centrarla
+    \begin{tabular}{|c c c c c} %per definire la tabulazione
+    \end{tabular}
+      %| inserisce una riga verticale
+      %c per centrare il testo, l per allinearlo a sinistra, r allinearlo a destra
+      \hline linea orizzontale
+      c1 & c2 & c3 & c4 %inserimento campi
+      \\ %per andare a capo
+      [0.5ex] %modifica la distanza tra le righe
+    \caption{Descrizione tabella}
+    \label{questaTabella} %utilizzabili anche per sezioni
+    \ref{questaTabella}
+  \end{table}
+
+  \usepackage{graphicx}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale=1]{nomeFileImmagine}
+    \caption{descrizione}
+  \end{figure}
+
+  \begin{equation}
+    \frac{x}{y}
+    x^{y} %apice
+    x_{i,j} %pedice
+    \href{https://latexeditor.lagrida.com/} %altre formule
+    $formula inline$
+  \end{equation}
+
+  \footnote{Nota a pié di pagina}
+  \tableofcontents %crea la bibliografia (indice)
+  \cite{...} %referenze, inserire il BibTeX in un file .bib
+  \include{file} %includere un file .tex in un altro file
+
+  %altre informazioni
+  \href{https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_(part_1)}
+\end{document}
